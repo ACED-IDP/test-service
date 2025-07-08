@@ -1,11 +1,11 @@
 # Overview 🌀
 
-Testing service for the CALYPR system 🐛
+Testing framework + service for the CALYPR system
 
 # Quick Start ⚡️
 
 ```sh
-TODO
+➜ TODO
 ```
 
 # Additional Resources 📚
