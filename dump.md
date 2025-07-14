@@ -14,11 +14,12 @@ See the **UI/UX** header for an example.
 # UI/UX
 ## Release Testing
 **Type:** mostly manual e2e tests
+
 **Links:**
 - [Internal Release Coordination Notes](https://wiki.ohsu.edu/display/KEDTW/CALYPR+Internal+Release+Coordination+Notes)
 - [initial work for e2e load testing](https://github.com/ohsu-comp-bio/load-testing)
 
-**Description:** A lot of testing done for release, ie new features that are being released. No existing testing that existing features haven't broken, ie formatting has been changed, etc. Also heavily coupled with the data that exists on the site (eg SMMART views for specific data). Would be hard to automate some of this, particularly because we have made project-specific views that don't generalize without upload very specific project metadata / data. Also likely requires some sort of service account for login, as everything is gated by login.
+**Description:** A lot of manual e2e testing done for release, ie new features that are being released. No existing testing that existing features haven't broken, ie formatting has been changed, etc. Also heavily coupled with the data that exists on the site (eg SMMART views for specific data). Would be hard to automate some of this, particularly because we have made project-specific views that don't generalize without upload very specific project metadata / data. Also likely requires some sort of service account for login, as everything is gated by login.
 
 **Testing Examples:**
 - Test that subject-level pie charts populate in the subject viewer
