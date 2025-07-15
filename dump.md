@@ -28,3 +28,24 @@ See the **UI/UX** header for an example.
 - Response based on facet subsetting
 - Validate patient-specimen specimen counts
 - Able to upload to ETL and see results populate on Explorer
+
+# Data Ingest
+## Git DRS
+**Type:** manual CLI tests
+
+**Links:**
+- [Git DRS](https://github.com/bmeg/git-drs)
+
+**Description:** Manual testing done to check pull/push git workflow. Even more usability errors that aren't tested based on (eg when I git push with an expired token it fails).
+
+**Testing Examples:**
+- LFS: `git push` workflow for a...
+  -  file that already exists (copy of a file)
+  -  new file / edited file
+  -  (to focus on git DRS over testing vanilla git / git LFS, ensure pre-commit can properly store indexd objects)
+- Git push of a regular file
+- `git lfs pull -I /path/to/file` where path is...
+  - wildcard or directory (multiple files)
+  - single file path
+  - (here, making sure the transfer client is properly invoked and can generate and download from a signed url)
+- ensuring `git drs init` generates an gen3 auth token and initializes directories as expected

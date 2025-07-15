@@ -1,6 +1,6 @@
 # Overview 🌀
 
-The goal of this repository is to be **living documentation on how we are testing the CALYPR system**.
+This repository is the **living documentation on how we are testing the CALYPR system**.
 
 It is currently in the ideating stage, which means we need to...
 1. **Determine our strategy** for testing code 
